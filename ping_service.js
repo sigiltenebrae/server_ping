@@ -6,8 +6,6 @@ app.use(cors({
 }));
 const isReachable = require('is-reachable');
 
-
-
 app.get('/ping/:loc', function(req, res) {
     (async () => {
         console.log(req.params.loc);
